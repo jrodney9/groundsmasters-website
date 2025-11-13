@@ -24,42 +24,134 @@
 </header>
 
 
-<section class="page-hero">
+<section class="page-hero page-hero--projects">
   <div class="container">
-    <h1>Projects</h1>
-    <p>Recent work &amp; case studies.</p>
+    <p class="eyebrow">Our Work</p>
+    <h1>Projects that keep Minnesota properties looking sharp</h1>
+    <p class="hero-subtitle">
+      From irrigation tune-ups to custom concrete curbing and flatwork, here’s a snapshot of what The Groundsmasters delivers
+      for homes, HOAs, and commercial sites in Owatonna, Rochester, and nearby towns.
+    </p>
   </div>
 </section>
 
-<section class="container gallery grid-3">
+<section class="container projects-intro">
+  <div class="projects-summary">
+    <h2>Featured installations</h2>
+    <p>
+      Every project is built to handle real Minnesota weather. We focus on clean lines, drainage, and long-term durability so
+      your property looks good in July <em>and</em> in January.
+    </p>
+  </div>
+  <div class="projects-metrics">
+    <div class="metric">
+      <span class="metric-value">15+</span>
+      <span class="metric-label">Years combined experience</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">100s</span>
+      <span class="metric-label">Properties cared for</span>
+    </div>
+    <div class="metric">
+      <span class="metric-value">4</span>
+      <span class="metric-label">Core trades in-house</span>
+    </div>
+  </div>
+</section>
 
-  <figure class="project">
-    <img 
-      src="/concrete.jpg"
-      alt="Concrete flatwork pad installed by The Groundsmasters"
-      loading="lazy"
-    />
-    <figcaption>Stamped concrete curbing</figcaption>
+<section class="container projects-filters">
+  <span>Filter by service:</span>
+  <div class="filter-chips" aria-label="Filter projects by service">
+    <button class="filter-chip active" data-filter="all">All</button>
+    <button class="filter-chip" data-filter="concrete">Concrete &amp; Flatwork</button>
+    <button class="filter-chip" data-filter="curbing">Curbing</button>
+    <button class="filter-chip" data-filter="irrigation">Irrigation</button>
+  </div>
+</section>
+
+<section class="container gallery grid-3 projects-grid">
+
+  <!-- Concrete / Flatwork -->
+  <figure class="project" data-category="concrete">
+    <div class="project-media">
+      <img
+        src="/concrete.jpg"
+        alt="Concrete flatwork pad installed by The Groundsmasters"
+        loading="lazy"
+      />
+      <span class="project-tag">Concrete &amp; Flatwork</span>
+    </div>
+    <figcaption>
+      <h3>Commercial equipment pad – Owatonna, MN</h3>
+      <p>
+        Poured a reinforced concrete pad to support equipment and reduce tracking of mud and debris. Graded for proper
+        drainage away from the building.
+      </p>
+      <ul class="project-meta">
+        <li><strong>Services:</strong> Flatwork, drainage-aware grading</li>
+        <li><strong>Property:</strong> Light commercial</li>
+      </ul>
+    </figcaption>
   </figure>
 
-  <figure class="project">
-    <img 
-      src="/Curbing.jpg"
-      alt="Concrete landscape curbing around planting beds"
-      loading="lazy"
-    />
-    <figcaption>Flatwork pad</figcaption>
+  <!-- Curbing -->
+  <figure class="project" data-category="curbing">
+    <div class="project-media">
+      <img
+        src="/Curbing.jpg"
+        alt="Concrete landscape curbing around planting beds"
+        loading="lazy"
+      />
+      <span class="project-tag">Landscape Curbing</span>
+    </div>
+    <figcaption>
+      <h3>Decorative curbing around front beds – Rochester, MN</h3>
+      <p>
+        Installed continuous concrete landscape curbing to clean up bed edges, reduce mulch washout, and make mowing faster
+        along the walks and driveway.
+      </p>
+      <ul class="project-meta">
+        <li><strong>Services:</strong> Decorative curbing</li>
+        <li><strong>Property:</strong> Residential</li>
+      </ul>
+    </figcaption>
   </figure>
 
-  <figure class="project">
-    <img 
-      src="/sprinkler.avif"
-      alt="Irrigation sprinkler running at dusk after a tune-up"
-      loading="lazy"
-    />
-    <figcaption>Irrigation tune-up</figcaption>
+  <!-- Irrigation -->
+  <figure class="project" data-category="irrigation">
+    <div class="project-media">
+      <img
+        src="/sprinkler.avif"
+        alt="Irrigation sprinkler running at dusk after a tune-up"
+        loading="lazy"
+      />
+      <span class="project-tag">Irrigation</span>
+    </div>
+    <figcaption>
+      <h3>Irrigation tune-up &amp; coverage fix – Steele County, MN</h3>
+      <p>
+        Repaired leaks, adjusted heads, and reprogrammed the controller to reduce wasted water and improve coverage on high-visibility turf.
+      </p>
+      <ul class="project-meta">
+        <li><strong>Services:</strong> Irrigation repair &amp; optimization</li>
+        <li><strong>Property:</strong> HOA common area</li>
+      </ul>
+    </figcaption>
   </figure>
 
+</section>
+
+<section class="page-cta">
+  <div class="container page-cta-inner">
+    <div>
+      <h2>Ready to start your own project?</h2>
+      <p>
+        Share a few details and we’ll walk the site, talk through options, and give you a straightforward plan for your
+        irrigation, curbing, or concrete work.
+      </p>
+    </div>
+    <a href="/contact.html" class="btn btn-primary">Request a project quote</a>
+  </div>
 </section>
 
 
