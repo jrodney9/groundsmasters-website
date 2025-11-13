@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thegroundsmasters.com/sitemap.xml
