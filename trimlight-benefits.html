@@ -18,7 +18,51 @@
     "name": "The Groundsmasters"
   }
 }</script>
-</head><body>
+</head>
+
+  <!-- Groundsmasters AI Assistant -->
+<div id="gm-chat-widget" class="gm-chat-closed">
+  <button class="gm-chat-toggle" aria-label="Open chat with The Groundsmasters">
+    💬
+  </button>
+
+  <div class="gm-chat-window" aria-live="polite">
+    <header class="gm-chat-header">
+      <div>
+        <div class="gm-chat-title">Groundsmasters Assistant</div>
+        <div class="gm-chat-subtitle">Ask a question or tell us what you need help with.</div>
+      </div>
+      <button class="gm-chat-close" aria-label="Close chat">×</button>
+    </header>
+
+    <div class="gm-chat-messages">
+      <div class="gm-chat-message gm-chat-message--bot">
+        <div class="gm-chat-bubble">
+          Hi! I’m the Groundsmasters Assistant. I can help you figure out which service you need,
+          answer questions about our work, or collect details to start a quote.
+          <br><br>
+          What can we help with today? (lawncare, irrigation, concrete, trees, snow, sweeping, playgrounds, Trimlight, etc.)
+        </div>
+      </div>
+    </div>
+
+    <form class="gm-chat-form">
+      <input
+        type="text"
+        name="message"
+        class="gm-chat-input"
+        placeholder="Type your question or describe your project..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit" class="gm-chat-send">Send</button>
+    </form>
+  </div>
+</div>
+<!-- /Groundsmasters AI Assistant -->
+
+  
+  <body>
 
 <header class="site-header">
   <div class="container nav">
