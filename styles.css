@@ -416,7 +416,11 @@ p{margin:0 0 12px;color:var(--muted)}
   }
 }
 
-/* HOME PAGE UPGRADE */
+/* ============================
+   HOME PAGE – UPGRADED LAYOUT
+   ============================ */
+
+/* HERO */
 
 .home-hero {
   background: radial-gradient(circle at top left, #17372a 0, #050a08 50%, #020404 100%);
@@ -431,13 +435,13 @@ p{margin:0 0 12px;color:var(--muted)}
 }
 
 .home-hero-copy h1 {
-  font-size: clamp(2.1rem, 3vw, 2.6rem);
+  font-size: clamp(2.1rem, 3vw, 2.7rem);
   margin-bottom: 0.5rem;
 }
 
 .home-hero-copy .hero-subtitle {
-  max-width: 36rem;
-  color: rgba(255, 255, 255, 0.85);
+  max-width: 38rem;
+  color: rgba(255, 255, 255, 0.86);
 }
 
 .hero-actions {
@@ -448,7 +452,7 @@ p{margin:0 0 12px;color:var(--muted)}
 }
 
 .btn-ghost {
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.45);
   background: transparent;
   color: #ffffff;
 }
@@ -458,32 +462,25 @@ p{margin:0 0 12px;color:var(--muted)}
   color: #9be7c4;
 }
 
-.hero-badges {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.75rem;
-  margin-top: 1.6rem;
+/* Trust row */
+
+.trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
 }
 
-.hero-badge {
-  background: rgba(2, 8, 6, 0.95);
-  border-radius: 0.9rem;
-  padding: 0.7rem 0.9rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+.trust-badge {
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(3, 10, 8, 0.92);
+  white-space: nowrap;
 }
 
-.hero-badge-label {
-  display: block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 0.15rem;
-}
-
-.hero-badge-value {
-  font-size: 0.9rem;
-}
+/* Hero side panel */
 
 .home-hero-panel {
   display: flex;
@@ -500,11 +497,12 @@ p{margin:0 0 12px;color:var(--muted)}
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
+  max-width: 22rem;
 }
 
 .hero-panel-card h2 {
   font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 .hero-panel-card ul {
@@ -512,6 +510,10 @@ p{margin:0 0 12px;color:var(--muted)}
   padding-left: 0;
   margin: 0;
   font-size: 0.9rem;
+}
+
+.hero-panel-card ul li + li {
+  margin-top: 0.2rem;
 }
 
 .hero-panel-card ul li::before {
@@ -522,7 +524,7 @@ p{margin:0 0 12px;color:var(--muted)}
 
 .hero-panel-card p {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .btn-full {
@@ -530,7 +532,31 @@ p{margin:0 0 12px;color:var(--muted)}
   text-align: center;
 }
 
-/* Home services */
+/* 3 REASONS / VALUE SECTION */
+
+.home-why-mini {
+  background: #050909;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.home-why-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.75rem;
+  padding-block: 1.9rem;
+}
+
+.why-point h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.why-point p {
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+/* CORE SERVICES GRID */
 
 .home-services {
   padding-block: 2.75rem 2.5rem;
@@ -542,7 +568,12 @@ p{margin:0 0 12px;color:var(--muted)}
 }
 
 .section-header h2 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.45rem;
+}
+
+.section-header p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .home-services-grid {
@@ -564,19 +595,20 @@ p{margin:0 0 12px;color:var(--muted)}
 
 .home-service-card h3 {
   font-size: 1.05rem;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.15rem;
 }
 
 .home-service-card p {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .home-service-card ul {
   list-style: none;
   padding-left: 0;
-  margin: 0.25rem 0 0.6rem;
+  margin: 0.3rem 0 0.6rem;
   font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.82);
 }
 
 .home-service-card ul li::before {
@@ -594,53 +626,93 @@ p{margin:0 0 12px;color:var(--muted)}
   color: #9be7c4;
 }
 
-/* Why Groundsmasters */
+/* FEATURED WORK */
 
-.home-why {
-  background: radial-gradient(circle at center, #0c1b16 0, #050809 60%, #020404 100%);
-  padding-block: 2.75rem 2.75rem;
+.featured-work {
+  background: radial-gradient(circle at center, #0b1612 0, #050809 60%, #020404 100%);
+  padding-block: 2.75rem 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.home-why-inner {
+.featured-work h2 {
+  margin-bottom: 1.4rem;
+}
+
+.featured-grid {
   display: grid;
-  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
-  gap: 2.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
 }
 
-.home-why-list {
-  list-style: none;
-  padding-left: 0;
-  margin-top: 0.75rem;
+.featured-item {
+  background: #050909;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
+}
+
+.featured-item img {
+  display: block;
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.featured-item figcaption {
+  padding: 0.75rem 1rem 0.9rem;
   font-size: 0.9rem;
 }
 
-.home-why-list li + li {
-  margin-top: 0.35rem;
+.center {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.6rem;
 }
 
-.home-why-card {
+/* TESTIMONIALS */
+
+.testimonials {
+  padding-block: 2.5rem 2.75rem;
   background: #050909;
-  border-radius: 1.2rem;
-  padding: 1.4rem 1.5rem 1.6rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.testimonials h2 {
+  margin-bottom: 1.4rem;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.testimonial {
+  background: #020506;
+  border-radius: 1rem;
+  padding: 1.2rem 1.3rem 1.3rem;
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+  font-size: 0.9rem;
 }
 
-.quote-text {
-  font-size: 0.95rem;
-  font-style: italic;
+.testimonial p {
   margin-bottom: 0.6rem;
+  color: rgba(255, 255, 255, 0.88);
 }
 
-.quote-meta {
+.testimonial footer {
   font-size: 0.8rem;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* Service area */
+/* SERVICE AREA (reuses earlier block but ensures layout) */
 
 .home-area {
   padding-block: 2.5rem 2.5rem;
+  background: #020404;
 }
 
 .home-area-inner {
@@ -648,6 +720,10 @@ p{margin:0 0 12px;color:var(--muted)}
   grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
   gap: 2rem;
   align-items: flex-start;
+}
+
+.home-area p {
+  color: rgba(255, 255, 255, 0.84);
 }
 
 .home-area-towns ul {
@@ -661,14 +737,20 @@ p{margin:0 0 12px;color:var(--muted)}
   margin-top: 0.2rem;
 }
 
-/* Responsive */
+/* ============================
+   RESPONSIVE ADJUSTMENTS
+   ============================ */
 
 @media (max-width: 900px) {
   .home-hero-inner {
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .hero-badges {
+  .home-hero-panel {
+    justify-content: flex-start;
+  }
+
+  .home-why-mini-grid {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -676,8 +758,12 @@ p{margin:0 0 12px;color:var(--muted)}
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .home-why-inner {
-    grid-template-columns: minmax(0, 1fr);
+  .featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .home-area-inner {
@@ -686,8 +772,21 @@ p{margin:0 0 12px;color:var(--muted)}
 }
 
 @media (max-width: 640px) {
+  .hero-badges,
+  .trust-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .home-services-grid {
     grid-template-columns: minmax(0, 1fr);
   }
-}
 
+  .featured-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
