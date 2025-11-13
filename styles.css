@@ -415,3 +415,279 @@ p{margin:0 0 12px;color:var(--muted)}
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* HOME PAGE UPGRADE */
+
+.home-hero {
+  background: radial-gradient(circle at top left, #17372a 0, #050a08 50%, #020404 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.home-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  gap: 2.5rem;
+  padding-block: 3rem 2.75rem;
+}
+
+.home-hero-copy h1 {
+  font-size: clamp(2.1rem, 3vw, 2.6rem);
+  margin-bottom: 0.5rem;
+}
+
+.home-hero-copy .hero-subtitle {
+  max-width: 36rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.3rem;
+}
+
+.btn-ghost {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: transparent;
+  color: #ffffff;
+}
+
+.btn-ghost:hover {
+  border-color: #9be7c4;
+  color: #9be7c4;
+}
+
+.hero-badges {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-top: 1.6rem;
+}
+
+.hero-badge {
+  background: rgba(2, 8, 6, 0.95);
+  border-radius: 0.9rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-badge-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 0.15rem;
+}
+
+.hero-badge-value {
+  font-size: 0.9rem;
+}
+
+.home-hero-panel {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+}
+
+.hero-panel-card {
+  background: #050909;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(155, 231, 196, 0.28);
+  padding: 1.5rem 1.5rem 1.7rem;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.hero-panel-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-panel-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.hero-panel-card ul li::before {
+  content: "▹";
+  margin-right: 0.4rem;
+  color: #9be7c4;
+}
+
+.hero-panel-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-full {
+  width: 100%;
+  text-align: center;
+}
+
+/* Home services */
+
+.home-services {
+  padding-block: 2.75rem 2.5rem;
+}
+
+.section-header {
+  max-width: 40rem;
+  margin-bottom: 1.75rem;
+}
+
+.section-header h2 {
+  margin-bottom: 0.5rem;
+}
+
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.home-service-card {
+  background: #050909;
+  border-radius: 1.25rem;
+  padding: 1.5rem 1.4rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.home-service-card h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.2rem;
+}
+
+.home-service-card p {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.home-service-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.25rem 0 0.6rem;
+  font-size: 0.85rem;
+}
+
+.home-service-card ul li::before {
+  content: "▹";
+  margin-right: 0.4rem;
+  color: #9be7c4;
+}
+
+.home-service-card ul li + li {
+  margin-top: 0.15rem;
+}
+
+.card-link {
+  font-size: 0.85rem;
+  color: #9be7c4;
+}
+
+/* Why Groundsmasters */
+
+.home-why {
+  background: radial-gradient(circle at center, #0c1b16 0, #050809 60%, #020404 100%);
+  padding-block: 2.75rem 2.75rem;
+}
+
+.home-why-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.2fr);
+  gap: 2.5rem;
+}
+
+.home-why-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.home-why-list li + li {
+  margin-top: 0.35rem;
+}
+
+.home-why-card {
+  background: #050909;
+  border-radius: 1.2rem;
+  padding: 1.4rem 1.5rem 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.45);
+}
+
+.quote-text {
+  font-size: 0.95rem;
+  font-style: italic;
+  margin-bottom: 0.6rem;
+}
+
+.quote-meta {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Service area */
+
+.home-area {
+  padding-block: 2.5rem 2.5rem;
+}
+
+.home-area-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.home-area-towns ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.home-area-towns li + li {
+  margin-top: 0.2rem;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .home-hero-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-badges {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-services-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-why-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .home-area-inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .home-services-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
